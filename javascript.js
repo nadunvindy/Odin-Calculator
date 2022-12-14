@@ -1,27 +1,6 @@
-function add(num1,num2){
-    return num1+num2;
-}
-
-function add(num1,num2){
-    return num1-num2;
-}
-
-function multiply(num1,num2){
-    return num1*num2;
-}
-
-function divide(num1,num2){
-    return num1/num2;
-}
-
-function operate(operator,num1,num2){
-}
-
-let operator = false;
-let input = true;
 let numberString = "";
 let number = Number(numberString);
-
+let operation = "";
 
 const lb1 = document.querySelector('#l1');
 const lb2 = document.querySelector('#l2');
@@ -42,88 +21,76 @@ const rbdivide = document.querySelector('#rdivide');
 const rbclear = document.querySelector('#AC');
 const display = document.querySelector('.display');
 
-rbclear.addEventListener('click',()=>{
-    numberString=""
+rbclear.addEventListener('click', () => {
+    numberString = ""
     number = Number(numberString);
-    display.textContent='';
+    display.textContent = '';
 })
 
-lb1.addEventListener('click',()=>{
+lb1.addEventListener('click', () => {
     numberString += "1";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
 
-lb2.addEventListener('click',()=>{
+lb2.addEventListener('click', () => {
     numberString += "2";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
 
-lb3.addEventListener('click',()=>{
+lb3.addEventListener('click', () => {
     numberString += "3";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
 
-lb4.addEventListener('click',()=>{
+lb4.addEventListener('click', () => {
     numberString += "4";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
 
-lb5.addEventListener('click',()=>{
+lb5.addEventListener('click', () => {
     numberString += "5";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
 
-lb6.addEventListener('click',()=>{
+lb6.addEventListener('click', () => {
     numberString += "6";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
 
-lb7.addEventListener('click',()=>{
+lb7.addEventListener('click', () => {
     numberString += "7";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
 
-lb8.addEventListener('click',()=>{
+lb8.addEventListener('click', () => {
     numberString += "8";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
 
-lb9.addEventListener('click',()=>{
+lb9.addEventListener('click', () => {
     numberString += "9";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
 
-lb0.addEventListener('click',()=>{
+lb0.addEventListener('click', () => {
     numberString += "0";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
 
-lbdecimal.addEventListener('click',()=>{
+lbdecimal.addEventListener('click', () => {
     numberString += ".";
     number = Number(numberString);
-    display.textContent=numberString;
+    display.textContent = numberString;
 })
-lb1.addEventListener('click',()=>{
-    numberString += "1";
-    number = Number(numberString);
-    display.textContent=numberString;
-})
-
-lb1.addEventListener('click',()=>{
-    numberString += "1";
-    number = Number(numberString);
-    display.textContent=numberString;
-})
-
 
 

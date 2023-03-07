@@ -1,1 +1,80 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
 
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 821px;
+  align-content: center;
+}
+
+.top {
+  display: flex;
+}
+
+.clear {
+  width: 198px;
+  border: 1px solid black;
+}
+
+.display {
+  display: flex;
+  font-size: 50px;
+  justify-content: end;
+  height: 148px;
+  border: 1px solid black;
+  width: 598px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.calc {
+  margin-top: 30px;
+  border: 2px solid black;
+  height: 550px;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  align-self: center;
+}
+
+.panel-left {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  display: flex;
+}
+
+.panel-right {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: center;
+  align-content: center;
+}
+
+.rb {
+  display: flex;
+  justify-content: center;
+  height: 78px;
+  border: 1px solid black;
+}
+
+.lb {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 98px;
+  width: 198px;
+  border: 1px solid black;
+}

@@ -44,6 +44,7 @@ body {
   flex-direction: column;
   width: 800px;
   align-self: center;
+  border-radius:10px;
 }
 
 .panel-left {
@@ -72,6 +73,7 @@ body {
 }
 
 .lb {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-content: center;

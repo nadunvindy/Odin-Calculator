@@ -1,6 +1,8 @@
+let numOne = 0;
 console.log("Nadun");
 let displayText = "";
 let num = Number(displayText);
+let operator = ".";
 
 const allClear = document.querySelector("#allclear");
 const display = document.querySelector(".display");
@@ -17,6 +19,12 @@ const lb0 = document.querySelector("#zero");
 const clear = document.querySelector(".clear");
 const decimal = document.querySelector("#decimal");
 
+const plus = document.querySelector("#plus");
+const minus = document.querySelector("#minus");
+const multiply = document.querySelector("#multiply");
+const divide = document.querySelector("#divide");
+const equals = document.querySelector("#equal");
+
 allClear.addEventListener("click", () => {
   displayText = "";
   num = Number(displayText);
@@ -26,67 +34,67 @@ allClear.addEventListener("click", () => {
 
 lb1.addEventListener("click", () => {
   displayText += "1";
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
 lb2.addEventListener("click", () => {
   displayText += "2";
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
 lb3.addEventListener("click", () => {
   displayText += "3";
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
 lb4.addEventListener("click", () => {
   displayText += "4";
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
 lb5.addEventListener("click", () => {
   displayText += "5";
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
 lb6.addEventListener("click", () => {
   displayText += "6";
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
 lb7.addEventListener("click", () => {
   displayText += "7";
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
 lb8.addEventListener("click", () => {
   displayText += "8";
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
 lb9.addEventListener("click", () => {
   displayText += "9";
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
 lb0.addEventListener("click", () => {
   displayText += "0";
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
 clear.addEventListener("click", () => {
   displayText = displayText.slice(0, -1);
-  number = Number(displayText);
+  num = Number(displayText);
   display.textContent = displayText;
 });
 
@@ -95,7 +103,77 @@ decimal.addEventListener("click", () => {
     prompt("Cannot add a decimal point");
   } else {
     displayText += ".";
-    number = Number(displayText);
+    num = Number(displayText);
     display.textContent = displayText;
+  }
+});
+
+clear.addEventListener("click", () => {
+  displayText = displayText.slice(0, -1);
+  num = Number(displayText);
+  display.textContent = displayText;
+});
+
+plus.addEventListener("click", () => {
+  numOne = num;
+  displayText = "";
+  num = Number(displayText);
+  operator = "+";
+  console.log("plus");
+  console.log(num);
+  display.textContent = "+";
+});
+
+minus.addEventListener("click", () => {
+  numOne = num;
+  displayText = "";
+  num = Number(displayText);
+  operator = "-";
+  console.log("minus");
+  console.log(num);
+  display.textContent = "-";
+});
+
+multiply.addEventListener("click", () => {
+  numOne = num;
+  displayText = "";
+  num = Number(displayText);
+  operator = "*";
+  console.log("multiply");
+  console.log(num);
+  display.textContent = "*";
+});
+
+divide.addEventListener("click", () => {
+  numOne = num;
+  displayText = "";
+  num = Number(displayText);
+  operator = "/";
+  console.log("divide");
+  console.log(num);
+  display.textContent = "/";
+});
+
+equals.addEventListener("click", () => {
+  console.log("equals");
+  if (operator == "+") {
+    display.textContent = "";
+    display.textContent = (numOne + num).toString();
+    num = numOne + num;
+  }
+  if (operator == "-") {
+    display.textContent = "";
+    display.textContent = (numOne - num).toString();
+    num = numOne - num;
+  }
+  if (operator == "*") {
+    display.textContent = "";
+    display.textContent = (numOne * num).toString();
+    num = numOne * num;
+  }
+  if (operator == "/") {
+    display.textContent = "";
+    display.textContent = (numOne / num).toString();
+    num = numOne / num;
   }
 });

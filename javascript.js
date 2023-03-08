@@ -15,6 +15,7 @@ const lb8 = document.querySelector("#eight");
 const lb9 = document.querySelector("#nine");
 const lb0 = document.querySelector("#zero");
 const clear = document.querySelector(".clear");
+const decimal = document.querySelector("#decimal");
 
 allClear.addEventListener("click", () => {
   displayText = "";
@@ -87,4 +88,14 @@ clear.addEventListener("click", () => {
   displayText = displayText.slice(0, -1);
   number = Number(displayText);
   display.textContent = displayText;
+});
+
+decimal.addEventListener("click", () => {
+  if (displayText.includes(".") == true) {
+    prompt("Cannot add a decimal point");
+  } else {
+    displayText += ".";
+    number = Number(displayText);
+    display.textContent = displayText;
+  }
 });
